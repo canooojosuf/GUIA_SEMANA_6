@@ -12,11 +12,8 @@ class ComercioController extends Controller
         return Comercio::with('transacciones')->get();
     }
 
-
-
     public function show(Comercio $comercio)
     {
-
         return $comercio->load('transacciones');
     }
 }
